@@ -22,7 +22,6 @@ class Category:
         self.__products.append(product)
         Category.product_count += 1
 
-
     @property
     def products(self):
         product_str = ""
@@ -30,11 +29,6 @@ class Category:
             product_str += f"{product.name}, {product.price} руб. Остаток: {product.quantity}шт.\n"
         return product_str
 
-
     @property
     def products_list(self):
         return self.__products
-
-
-
-

@@ -7,13 +7,14 @@ def test_product_init(product):
     assert product.price == 180000.0
     assert product.quantity == 7
 
+
 def test_new_product():
-    product = Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера",
-                       180000.0,  5)
+    product = Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)
     product.name = "Samsung Galaxy S23 Ultra"
     product.description = "256GB, Серый цвет, 200MP камера"
     product.price = 180000.0
     product.quantity = 5
+
 
 def test_price(product):
     product.price = -100
