@@ -35,4 +35,3 @@ def test_category_str(first_category):
 def test_add_product_error(first_category, product):
     with pytest.raises(TypeError):
         first_category.add_product(1)
-

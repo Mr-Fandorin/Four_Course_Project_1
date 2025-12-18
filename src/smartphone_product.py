@@ -1,8 +1,8 @@
-
 from src.product import Product
 
 
 class Smartphone(Product):
+    """Класс категории смартфонов"""
     efficiency: float
     model: str
     memory: int
@@ -19,6 +19,3 @@ class Smartphone(Product):
         if type(other) is Smartphone:
             return self.price * self.quantity + other.price * other.quantity
         raise TypeError
-
-
-

@@ -2,6 +2,7 @@ from src.product import Product
 
 
 class LawnGrass(Product):
+    """Класс категории травы газонной"""
     country: str
     germination_period: str
     color: str

@@ -10,8 +10,10 @@ def test_lawngrass_product_init(lawngrass_product):
     assert lawngrass_product.germination_period == "7 дней"
     assert lawngrass_product.color == "Зеленый"
 
+
 def test_lawngrass_product_add(lawngrass_product, lawngrass_product_2):
     assert lawngrass_product + lawngrass_product_2 == 16750
+
 
 def test_lawngrass_product_error(lawngrass_product):
     with pytest.raises(TypeError):
