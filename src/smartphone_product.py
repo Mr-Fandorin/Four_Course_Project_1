@@ -3,6 +3,7 @@ from src.product import Product
 
 class Smartphone(Product):
     """Класс категории смартфонов"""
+
     efficiency: float
     model: str
     memory: int
