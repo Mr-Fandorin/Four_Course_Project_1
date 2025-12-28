@@ -7,6 +7,10 @@ E-commerce  — электронная торговля, или электрон
 
 ## Блоки проекта
 
+### "Класс Миксин для вывода информации" (print_mixin.py)
+
+### "Абстрактный класс для продуктов" (base_product.py)
+
 ### "Класс Product" (product.py)
 
 ### "Класс Category" (category.py)
@@ -19,3 +23,4 @@ E-commerce  — электронная торговля, или электрон
 #### Фикстуры для тестирования (conftest.py)
 #### Тесты для класса Product (test_product.py)
 #### Тесты для класса Category (test_category.py)
+#### Тесты для класса PrintMixin (test_print_mixin.py)
