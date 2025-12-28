@@ -11,6 +11,10 @@ E-commerce  — электронная торговля, или электрон
 
 ### "Класс Category" (category.py)
 
+### "Класс Smartphone" (smartphone_product.py)
+
+### "Класс LawnGrass" (lawngrass_product.py)
+
 ### Блок тестирования
 #### Фикстуры для тестирования (conftest.py)
 #### Тесты для класса Product (test_product.py)
