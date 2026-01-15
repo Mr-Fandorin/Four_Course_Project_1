@@ -30,6 +30,7 @@ def test_product_str(product):
 def test_product_add(product, product_2):
     assert product + product_2 == 2940000.0
 
+
 def test_product_init_2():
-    with pytest.raises(ValueError, match='Товар с нулевым количеством не может быть добавлен'):
+    with pytest.raises(ValueError, match="Товар с нулевым количеством не может быть добавлен"):
         Product("Xiaomi Redmi Note 11", "1024GB, Синий", 31000.0, 0)
