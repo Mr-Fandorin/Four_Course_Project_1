@@ -1,5 +1,7 @@
 import pytest
 
+from src.product import Product
+
 
 def test_category_init(first_category, second_category):
     assert first_category.name == "Смартфоны"
@@ -35,3 +37,9 @@ def test_category_str(first_category):
 def test_add_product_error(first_category, product):
     with pytest.raises(TypeError):
         first_category.add_product(1)
+
+def test_middle_price(first_category, category_without_product):
+    assert first_category.middle_price() == 140333.33333333334
+    assert category_without_product.middle_price() == 0
+
+
