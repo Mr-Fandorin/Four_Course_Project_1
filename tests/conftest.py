@@ -39,6 +39,11 @@ def product_2():
 
 
 @pytest.fixture
+def product_3():
+    return Product("Xiaomi Redmi Note 11", "1024GB, Синий", 31000.0, 0)
+
+
+@pytest.fixture
 def smartphone_product():
     return Smartphone(
         "Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5, 95.5, "S23 Ultra", 256, "Серый"
@@ -58,3 +63,10 @@ def lawngrass_product():
 @pytest.fixture
 def lawngrass_product_2():
     return LawnGrass("Газонная трава 2", "Выносливая трава", 450.0, 15, "США", "5 дней", "Темно-зеленый")
+
+
+@pytest.fixture
+def category_without_product():
+    return Category(
+        name="Машины", description="Современный автомобиль, который позволяет наслаждаться вождением", products=[]
+    )
